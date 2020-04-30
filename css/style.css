@@ -160,7 +160,7 @@ body{
 }
 
 .header-nav{
-    margin-left: 350px;
+    margin-left: 400px;
 }
 
 .header-nav li{
@@ -276,13 +276,13 @@ body{
 
 .category-flex{
     width: 70%;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-top: 30px;
 }
 
 .category-flex .btn{
     padding: 14px 22px;
-    border: 2px solid;
+    border: 1px solid;
     cursor: pointer;
     overflow: hidden;
     background-color: transparent;
@@ -320,7 +320,8 @@ body{
     width: 100%;
     height: 100px;
     background-color: #B70000;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .first-result .result-btn{
@@ -330,12 +331,13 @@ body{
 
 .first-result a{
     text-decoration: none;
-    position: absolute;
-    margin-left: 27%;
-    margin-top: 8%;
+    /* position: absolute; */
+    /* margin-left: 27%;
+    margin-top: 8%; */
     line-height: 1.7;
     font-size: 16px;
     font-style: italic;
+    margin: 0 auto;
 }
 
 .second-result{
@@ -358,12 +360,13 @@ body{
 
 .second-result a{
     text-decoration: none;
-    position: absolute;
+    /* position: absolute;
     margin-left: 27%;
-    margin-top: 8%;
+    margin-top: 8%; */
     line-height: 1.7;
     font-size: 16px;
     font-style: italic;
+    margin: 0 auto;
 }
 
 .third-result{
@@ -385,12 +388,12 @@ body{
 
 .third-result a{
     text-decoration: none;
-    position: absolute;
-    margin-left: 27%;
-    margin-top: 8%;
-    line-height: 1.7;
+    /* position: absolute; */
+    /* margin-left: 27%;
+    margin-top: 8%; */
     font-size: 16px;
     font-style: italic;
+    margin: 0 auto;
 }
 
 /* 3枚目のページです！↑↑ */
@@ -532,7 +535,7 @@ body{
 }
 
 form{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -541,13 +544,16 @@ label{
     display: inline-block;
     width: 30%;
     color: black;
+    margin: 0 auto;
     margin-top: 30px;
-    margin-left: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
-
+.item{
+    margin: 0 auto;
+}
 input{
     height: 40px;
+    margin: 0 auto;
 }
 
 input, textarea{
@@ -563,10 +569,9 @@ textarea{
 
 .btn-area{
     text-align: center;
-    display: flex;
-    margin-top: 30px;
-    width: 50%;
-    margin-left: 425px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 input[type="submit"]{
@@ -574,7 +579,7 @@ input[type="submit"]{
     color: white;
     font-size:17px;
     font-weight:bold;
-    width: 50%;
+    width: 100%;
 }
 
 .logo-img{
@@ -628,7 +633,7 @@ th{
 }
 
 tr{
-    border-bottom: 2px solid #B70000;
+    border-bottom: 1px solid #B70000;
 }
 
 td{
@@ -860,17 +865,10 @@ td a{
         overflow: hidden;
     }
     img{
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
-    #res p{
-        position: absolute;
-        z-index: 5;
-        top: 120px;
-        left: 55px;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-    }
+
     #first-eycatch{
         display: none;
     }
@@ -887,7 +885,7 @@ td a{
     }
     .news-box{
         width: 100%;
-        border: 2px solid #B70000;
+        border: 1px solid #B70000;
         padding: 10px;
         margin-top: 15px;
     }
@@ -1025,7 +1023,7 @@ td a{
     }
     th, td{
         padding: 5px;
-        border: 2px solid #B70000;
+        border: 1px solid #B70000;
         font-size: 10px;
     }
     
@@ -1074,7 +1072,10 @@ td a{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
+    .p-title{
+        font-size: 22px;
+        margin-top: 35px;
+    }
 }
 
 
