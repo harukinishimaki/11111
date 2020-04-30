@@ -1,0 +1,1087 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1.6;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* リセットCSS */
+
+/* html{
+    height: 100%;
+}
+
+body{
+ max-width: 100%;
+} */
+
+
+.fadeIn{
+    opacity: 0;
+    transform: translate(0, 200px);
+    transition: 1s;
+    -webkit-transform: translate(0, 200px);
+    -moz-transform: translate(0, 200px);
+    -ms-transform: translate(0, 200px);
+    -o-transform: translate(0, 200px);
+  }
+   
+  .fadeIn.scrollIn{
+    opacity : 1;
+    transform : translate(0, 0);
+  }
+
+#top-header{
+    background-color: #B70000;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+
+.flex{
+    display: flex;
+}
+
+#hamburger{
+    display: none;
+}
+
+.header-logo{
+    margin-left: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.header-logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header-nav{
+    margin-left: 350px;
+}
+
+.header-nav li{
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.header-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* header↑↑ */
+
+#cover{
+    background-color: #B70000;
+    height: 70px;
+    width: 100%;
+}
+
+#first-eycatch{
+    background: url(../img/nanyoudaifc.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    /* position: relative;
+    z-index: 1; */
+    z-index: 111;
+}
+
+
+
+#first-eycatch p{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 45%;
+    left: 22%;
+    font-weight: bold;
+}
+
+/* #top-btn{
+    background: #B70000;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+} */
+
+/* 最初の画面です！！↑ */
+
+#secondview{
+    background-color: white;
+    height: 500px;
+}
+
+.second-title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.news-flex{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.news-img{
+    background: url(../img/team-2.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+}
+
+.news-box{
+    width: 50%;
+}
+
+.news-title{
+    margin-left: 10%;
+    font-size: 22px;
+}
+
+.news-content{
+    margin-left: 10%;
+    font-size: 18px;
+    margin-top: 6%;
+    line-height: 1.8;
+}
+
+/* 2枚目のページです！！↑ */
+
+#thirdview{
+    background-color: white;
+    height: 500px;
+}
+
+.third-title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.category-flex{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.category-flex .btn{
+    padding: 14px 22px;
+    border: 2px solid;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all .3s ease;
+    border-color: #B70000;
+    color: #B70000;
+    margin-right: 30px;
+}
+
+.category-flex a{
+    text-decoration: none;
+}
+
+.result-flex{
+    display: flex;
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 30px;
+}
+
+.first-result{
+    display: block;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.first-result-img{
+    background: url(../img/team3.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.box{
+    width: 100%;
+    height: 100px;
+    background-color: #B70000;
+    position: relative;
+}
+
+.first-result .result-btn{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.first-result a{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 8%;
+    line-height: 1.7;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.second-result{
+    display: block;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.second-result-img{
+    background: url(../img/team4.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.second-result .result-btn{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.second-result a{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 8%;
+    line-height: 1.7;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.third-result{
+    display: block;
+    width: 30%;
+}
+
+.third-result-img{
+    background: url(../img/team5.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.third-result .result-btn{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.third-result a{
+    text-decoration: none;
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 8%;
+    line-height: 1.7;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* 3枚目のページです！↑↑ */
+
+#forthview{
+    background-color: white;
+    height: 930px;
+}
+
+.forth-title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.info-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.about-team{
+    width: 45%;
+    margin-right: 10%;
+    display: block;
+}
+
+.team-img{
+    background: url(../img/team6.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.box-center{
+    width: 100%;
+    height: 100px;
+    background-color: #B70000;
+    text-align: center;
+}
+
+.team-btn{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 100px;
+}
+
+.about-team a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.place{
+    width: 45%;
+    display: block;
+}
+
+.place-img{
+    background: url(../img/school.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.place-btn{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 100px;
+}
+
+.place a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery{
+    width: 45%;
+    display: block; 
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.gallery-img{
+    background: url(../img/team7.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+}
+
+.gallery-btn{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 100px;
+}
+
+.gallery a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coach{
+    width: 45%;
+    display: block; 
+    margin-top: 10%;
+}
+
+.coach-img{
+    background: url(../img/team8.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+}
+
+.coach-btn{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 100px;
+}
+
+.coach a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 4枚目のページです！↑↑ */
+
+#lastview{
+    background-color: white;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+}
+
+.last-title{
+    text-align: center;
+    font-size: 35px;
+    margin: 30px;
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+label{
+    display: inline-block;
+    width: 30%;
+    color: black;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+input{
+    height: 40px;
+}
+
+input, textarea{
+    box-sizing: border-box;
+    border: 1px solid #B70000;
+    width: 50%;
+}
+
+textarea{
+    height: 60px;
+    margin-top: 40px;
+}
+
+.btn-area{
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 425px;
+}
+
+input[type="submit"]{
+    background:  #B70000;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    width: 50%;
+}
+
+.logo-img{
+    background: url(../img/logo.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-top: 120px;
+}
+
+#footer{
+    background-color: #B70000;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+
+small{
+    color: rgb(255, 255, 255);
+}
+
+  /* PC画面終了↑↑ */
+
+/* クラブ紹介↓ */
+
+#club-page{
+    background-color: white;
+    height: 900px;
+}
+
+.club-title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.contain{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+th, td{
+    text-align: left;
+}
+
+th{
+    padding: 10px 5pc;
+}
+
+tr{
+    border-bottom: 2px solid #B70000;
+}
+
+td{
+    margin-left: 100px;
+}
+
+td a{
+    text-decoration: none;
+    color: #B70000;
+}
+
+/* クラブ紹介↑ */
+
+/* スケジュール↓ */
+
+#first-eycatch-schedule{
+    background: url(../img/2020-04-28.png)no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 705px;
+}
+
+.s-title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px; 
+}
+
+.s-notice{
+    margin-left: 24%;
+    margin-bottom: 40px;
+}
+/* スケジュール↑ */
+
+/* 練習環境↓ */
+
+.p-title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px; 
+}
+
+.team-img-1{
+    background: url(../img/bessho.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.place-img-2{
+    background: url(../img/shimoyugi.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.gallery-img-3{
+    background: url(../img/yugi.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+}
+
+.coach-img-4{
+    background: url(../img/matugi.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+}
+
+#demand{
+    background: url(../img/poster.jpg)no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 900px;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+#footer-p{
+    background-color: #B70000;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 練習環境↑ */
+
+/* メンバー募集*/
+
+.ga-title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px; 
+}
+
+
+/* メンバー募集↑ */
+
+/* コーチ募集↓ */
+
+.coach-t{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px; 
+}
+
+
+#coach-t-img{
+    background: url(../img/oudannmaku.jpg)no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: 50% 20px;
+}
+
+/* コーチ募集↑ */
+/* @media screen and (max-width: 769px){
+    img{
+        display: none;
+    }
+} */
+@media screen and (min-width: 768px){
+    #res{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+    .menu-content{
+        display: none;
+    }
+    #res-2{
+        display: none;
+    }
+    #demand-f{
+        display: none;
+    }
+    #coach-ff{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    /* #menu{
+        display: block;
+      } */
+      .header-nav{
+        display: none;
+      }
+    
+    #hamburger{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        right: 20px;
+        transition: 4s;
+        display: block;
+      }
+      
+      
+      #hamburger span{
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        transition: .8s;
+      }
+      #hamburger span:nth-of-type(1){
+        position: absolute;
+        top: 10px;
+        left: 2px;
+      }
+      #hamburger span:nth-of-type(2){
+        position: absolute;
+        top: 20px;
+        left: 2px;
+      }
+      #hamburger span:nth-of-type(3){
+        position: absolute;
+        top: 30px;
+        left: 2px;
+      }
+      .menu-content{
+        display: block;
+    }
+    .menu-content .menu-title{
+        margin: 40px 20px;
+        font-size: 2.2rem;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        font-weight: bold;
+    }
+    .menu-content{
+        width: calc(100% - 80px);
+        height: 100%;
+        text-align: center;
+        transition: .2s;
+        position: fixed;
+        top: 0;
+        left: calc(-100% - 80px);
+        background: #B70000;
+        color: rgb(255, 255, 255);
+        box-shadow: 80px 0 #B70000;      
+    }
+    .menu-content li a{
+        color: rgb(255, 255, 255);
+        margin: 15px;
+        padding: 5px;
+        border-bottom: 0.5px solid rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+    }
+    .menu-content li{
+        width: 100%;
+        text-align: left;
+    }
+    .menu-content.open{
+        left: 0;
+    }
+    .menu-title a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    .wrap {
+        overflow: hidden;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    #res p{
+        position: absolute;
+        z-index: 5;
+        top: 120px;
+        left: 55px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    #first-eycatch{
+        display: none;
+    }
+    .second-title{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .news-flex{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .news-img{
+      display: none;
+    }
+    .news-box{
+        width: 100%;
+        border: 2px solid #B70000;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .news-title{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    .news-content{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: 1.6;
+        margin-top: 12px;
+    }
+    #secondview{
+        height: 370px;
+    }
+    .third-title{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .category-flex{
+        display: none;
+    }
+    .result-flex{
+        display: block;
+        margin-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .first-result{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .second-result{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .third-result{
+        width: 100%;
+    }
+    #thirdview{
+        height: 950px;
+    }
+    .forth-title{
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .info-wrap{
+        display: block;
+        margin-top: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-team{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .place{
+        width: 100%;
+    }
+    .gallery{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .coach{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #forthview{
+        height: 1450px;
+    }
+    .last-title{
+        font-size: 22px;
+        margin-top: 50px;
+    }
+    .btn-area{
+        margin-top: 15px;
+        margin-left: 42%;
+    }
+    label{
+        margin-left: 5%;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        width: 100%;
+    }
+    input{
+        width: 90%;
+        margin-left: 5%;
+        border: 2px solid rgb(255, 255, 255);
+    }
+    form{
+        background-color: #B70000;
+        width: 90%;
+        margin: 0 auto;
+        height: 500px;
+    } 
+    .item{  
+        display: block;
+        width: 100%;
+    }
+    textarea{
+        width: 90%;
+        margin-left: 5%;
+        border: 2px solid rgb(255, 255, 255);
+        margin-top: 3px;
+    }
+    input[type="submit"] {
+        background-color: rgb(255, 255, 255);
+        color: #B70000;
+        margin-top: 20px;
+        margin-left: -5%;
+    }
+    .logo-img{
+        display: none;
+    }
+    #rrimg{
+        margin-top: 120px;
+    }
+    #lastview{
+        height: 900px;
+    }
+    small{
+        font-size: 10px;
+    }
+    .club-title{
+        font-size: 22px;
+        margin-top: 35px;
+    }
+    .contain{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    th, td{
+        padding: 5px;
+        border: 2px solid #B70000;
+        font-size: 10px;
+    }
+    
+
+    #club-page{
+        height: 660px;
+    }
+    #mu{
+        display: none;
+    }
+    .s-title{
+        font-size: 22px;
+        margin-top: 35px;
+    }
+    #res-2 img{
+        width: 100%;
+        height: auto;
+    }
+    .s-notice{
+        font-size: 10px;
+        margin-left: 0;
+        margin-bottom: 190px;
+    }
+    .ga-title{
+        font-size: 22px;
+        margin-top: 35px;
+    }
+    #demand{
+        display: none;
+    }
+    #demand-f img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 65px;
+    }
+    .coach-t{
+        font-size: 22px;
+        margin-top: 35px;
+    }
+    #coach-t-img{
+        display: none;
+    }
+    #coach-ff img{
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
