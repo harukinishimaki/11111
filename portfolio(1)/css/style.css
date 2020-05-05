@@ -140,6 +140,7 @@ body{
 
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 
 #hamburger{
@@ -159,9 +160,8 @@ body{
     text-decoration: none;
 }
 
-.header-nav{
-    margin-left: 400px;
-}
+/* .header-nav{
+} */
 
 .header-nav li{
     display: inline-block;
@@ -593,14 +593,24 @@ input[type="submit"]{
 
 #footer{
     background-color: #B70000;
-    height: 70px;
+    height: 100px;
     width: 100%;
-    line-height: 70px;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 small{
     color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+small a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
   /* PC画面終了↑↑ */
@@ -742,6 +752,9 @@ td a{
     font-size: 35px;
     margin-top: 30px; 
 }
+.contain{
+    margin-bottom: 50px;
+}
 
 
 #coach-t-img{
@@ -752,11 +765,34 @@ td a{
 }
 
 /* コーチ募集↑ */
-/* @media screen and (max-width: 769px){
-    img{
-        display: none;
-    }
-} */
+
+/* プライバシーポリシー↓ */
+#privcy-p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: .64vw 0 .86vw;
+    /* opacity: .6; */
+    transform: skewX(-15deg);
+    box-shadow: 1px 1px rgba(226,0,0,.48), 6px 18px 30px -6px rgba(0,0,0,.09);
+    color: #000000;
+}
+#privcy-p p{
+    margin-top: 30px;
+    line-height: 1.7;
+}
+.hiduke{
+    font-style: italic;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
 @media screen and (min-width: 768px){
     #res{
         display: none;
@@ -1020,6 +1056,7 @@ td a{
         width: 90%;
         margin: 0 auto;
         margin-top: 15px;
+        margin-bottom: 50px;
     }
     th, td{
         padding: 5px;

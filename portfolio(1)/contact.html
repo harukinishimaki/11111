@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gallery</title>
+    <title>お問い合わせ</title>
     <link rel="stylesheet" href="../portfolio(1)/css/style.css">
 </head>
 <body>
-
     <div id="firstview">
         <header id="top-header">
             <div id="hamburger">
@@ -29,7 +28,7 @@
                 </nav>
             </div>
             <nav class="menu-content">
-                <p class="menu-title"><a href="../portfolio(1)/index.html">南陽台FC</a>C</p>
+                <p class="menu-title"><a href="../portfolio(1)/index.html">南陽台FC</a></p>
                 <ul class="menu-content_inner">
                     <li><a href="../portfolio(1)/club.html">クラブ紹介</a></li>
                     <li><a href="../portfolio(1)/schedule.html">スケジュール</a></li>
@@ -48,13 +47,43 @@
 
 
 
-    <h2 class="ga-title">メンバー募集</h2>
+    <div id="lastview">
+        <h2 class="last-title">お問い合わせ</h2>
 
-    <div id="demand"></div>
+        <form class="" action="nanyodaifc.since1985@gmail.com" method="post">
+            <div class="item">
+                <label for="namerendou">お名前:</label>
+                <input id="namerendou" type="text" name="yourname" placeholder="お名前を入力して下さい。"> 
+            </div>
+            <div class="item">
+                <label for="emailrendou">E-mail:</label>
+                <input id="emailrendou" type="email" name="youremail" placeholder="メールアドレスを入力して下さい。">
+            </div>
+            <div class="item">
+                <label for="tellrendou">電話番号:</label>
+                <input id="tellrendou" type="tel" name="yourtell" placeholder="電話番号を入力して下さい。">
+            </div>
+            <div class="item">
+                <label for="messagerendou">お問い合わせ内容:</label>
+                <textarea id="messagerendou" type="textarea" name="yourmessage" placeholder="お問い合わせ内容を入力して下さい。"></textarea>
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="送信">
+            </div>
+        </form>
 
-    <div id="demand-f"><img src="../portfolio(1)/img/poster.jpg" alt=""></div>
+        <div class="logo-img"></div>
+        <div id="rrimg">
+            <img src="../portfolio(1)//img/logo.png" alt="">
+        </div>
+    </div>
+
+  
     <footer id="footer">
-        <small>Copyright 2020 Nanyodai Football Club All Rights Reserved.</small>
+        <small>Copyright 2020 Nanyodai Football Club All Rights Reserved.<br>
+            <a href="../portfolio(1)/privcy.html">プライバシーポリシー</a>
+            <a href="../portfolio(1)/policy.html">利用規約</a>
+            <a href="../portfolio(1)/personal.html">個人情報保護方針</a></small>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
